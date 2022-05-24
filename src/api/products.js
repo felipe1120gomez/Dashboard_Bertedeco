@@ -1,7 +1,7 @@
 export async function getProducts() {
     
     try {
-        const response = await fetch("https://bertedeco.herokuapp.com/api/products")
+        const response = await fetch("https://bertedeco.herokuapp.com/products/api/products")
         if(!response.ok) {
             throw new NetworkError()
         }
